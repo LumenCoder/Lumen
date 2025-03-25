@@ -1,0 +1,84 @@
+/* Global reset and styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Full-screen loading screen */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* The canvas covers the full viewport */
+#logo-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Main content initially hidden, will fade in */
+#main-content {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Centered logo container styling */
+#logo-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Search section styling */
+#search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#search-input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e90ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#search-button:hover {
+  background-color: #1c86ee;
+}
+
+#search-response {
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+}
