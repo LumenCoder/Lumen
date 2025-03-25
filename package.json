@@ -1,0 +1,14 @@
+{
+  "name": "unique-bio-3d-logo-ai-search",
+  "version": "1.0.0",
+  "description": "A high-end interactive bio website featuring a 3D animated logo and a mini AI-powered search interface.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
