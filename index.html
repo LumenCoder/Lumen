@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unique Bio with 3D Logo & AI Search</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!-- Loading screen with a full-screen canvas for the logo animation -->
+  <div id="loading-screen">
+    <canvas id="logo-canvas"></canvas>
+  </div>
+  
+  <!-- Main content hidden until the logo animation completes -->
+  <div id="main-content">
+    <header>
+      <div id="logo-container">
+        <!-- The animated logo will be moved here post-animation -->
+        <h1>Unique Bio</h1>
+      </div>
+    </header>
+    <section id="search-section">
+      <input type="text" id="search-input" placeholder="Ask something...">
+      <button id="search-button">Search</button>
+      <div id="search-response"></div>
+    </section>
+  </div>
+  
+  <!-- Include Three.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- The 3D logo animation script -->
+  <script src="assets/logo3d.js"></script>
+  <!-- Main site logic including the mini AI search -->
+  <script src="assets/main.js"></script>
+</body>
+</html>
